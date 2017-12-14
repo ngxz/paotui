@@ -1,0 +1,67 @@
+/* pages/orderdetails/orderdetails.wxss */
+.header{
+  padding-bottom: 15rpx;
+   border-bottom: 30rpx solid #E0E0E0;
+   width: 90%;
+   margin: 0 auto;
+}
+.header text{
+  display: block;
+  margin-left: 5%;
+  color: #BEBEBE;
+  line-height: 70rpx;
+}
+.code_img image{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  margin-top:30rpx;
+}
+.code_img{
+  width: 90%;
+  border-bottom: 30rpx solid #E0E0E0;
+  margin: 0 auto;
+  padding-bottom: 30rpx;
+}
+.fooder{
+  padding-bottom: 20rpx;
+}
+.fooder text{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: small;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #E0E0E0;
+}
+.money{
+  overflow: hidden;
+}
+.money text{
+  color: red;
+  float: right;
+  margin-right: 80rpx;
+}
+.fooder_but{
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px #888888; 
+  position: fixed;
+  top: 91%;
+}
+.fooder_but button{
+  width: 50%;
+  float: right;
+  background-color: #00AEAE;
+  color: white;
+  border-radius: 0rpx;
+  line-height: 94rpx;
+}
+.fooder_but text{
+  width: 50%;
+  display: block;
+  float: left;
+  color: red;
+  line-height: 94rpx;
+}

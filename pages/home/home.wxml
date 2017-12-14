@@ -1,0 +1,87 @@
+<!--pages/home/home.wxml-->
+<!--微信客服-->
+<view class='kf'><image src='/images/icon-kf.png'/></view>
+<view class='banner'>  
+  <!--顶部轮播图-->  
+  <swiper indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="#4a91e3" circular="true">  
+    <swiper-item>  
+        <image mode='widthFix' class='top-img' src='/images/banner01.jpg'/>
+    </swiper-item>  
+    <swiper-item>  
+        <image mode='widthFix' class='top-img' src='/images/banner02.jpg'/>
+    </swiper-item>
+  </swiper>  
+</view>  
+<!--公告-->
+<view class='gonggaos gonggao_01'>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+        <navigator url="###" open-type="navigate">
+            <swiper-item>
+                <view class="swiper_item">重庆润企科技有限公司1</view>
+            </swiper-item>
+        </navigator>
+        <navigator url="###" open-type="navigate">
+            <swiper-item>
+                <view class="swiper_item">重庆润企科技有限公司2</view>
+            </swiper-item>
+        </navigator>
+    </swiper>
+</view>
+
+<!--菜单-->
+<view class='menu-list'>
+    <view class='menu-item'>
+        <navigator url='../tackyou/tackyou'>
+          <image class='menu-img' src='/images/icon-01.png' />
+          <view class='menu-txt'>帮你取</view>
+        </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-02.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-03.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-04.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-05.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-06.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-07.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-08.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+    <view class='menu-item'>
+      <navigator url='../tackyou/tackyou'>
+        <image class='menu-img' src='/images/icon-09.png' />
+        <view class='menu-txt'>帮你取</view>
+      </navigator>
+    </view>
+</view>

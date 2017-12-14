@@ -1,0 +1,34 @@
+<!-- <import src="../toast/toast.wxml"/>
+<template is="wxToast" data="{{...wxToastConfig}}"></template> -->
+<view class="form-list">
+
+  <view class="form-item">
+    <view class="form-item-hd">真实姓名：</view>
+    <view class="form-item-bd">
+      <input type="text" bindinput="bindinput" placeholder-class="input-placeholder" name="name" id='realname' placeholder="请输入姓名"/>
+    </view>
+  </view>
+  <view class="form-item">
+    <view class="form-item-hd">手机号码：</view>
+    <view class="form-item-bd">
+      <input type="number" bindinput="bindinput"  placeholder-class="input-placeholder" id="mobile" placeholder="请输入手机号码" maxlength="11" />
+    </view>
+  </view>
+  <view class="form-item">  
+    <picker mode="date" value="" start="{{startdate}}" end="{{enddate}}" bindchange="bindDateChange">
+      <view class="form-item-hd">预约日期：</view>
+      <view class="form-item-bd">{{dates}}</view>
+    </picker>
+  </view>
+  <view class="form-item">
+    <picker mode="time"  start="00:00" end="23:59" bindchange="bindTimeChange">  
+      <view class="form-item-hd">预约时间：</view>
+      <view class="form-item-bd">{{times}}</view>
+    </picker>  
+  </view>
+  <view class="form-item">
+    <textarea placeholder="请留言"  bindinput='bindinput' id="content" auto-focus />
+  </view>
+</view>
+
+<view class='submit' bindtap='submit'>提交预约</view>

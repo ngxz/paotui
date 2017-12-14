@@ -1,0 +1,145 @@
+<!--pages/hotel/details/details.wxml-->
+<swiper>
+ <image mode='widthFix' class="slide-image" src='/images/banner01.jpg'/>
+</swiper>
+
+<view class='ad-na'>
+  <navigator url='###'>
+    <view class='ad'>
+      <text class='address'>重庆市渝中区石油路万科中心4栋7-26</text>
+      <image src='/images/ad-na.png'></image>
+    </view>
+  </navigator>
+</view>
+
+<!--导航条-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<view class="content">
+        
+  <view class="content-block" hidden="{{currentTab!==0}}">
+    <view class='cont-one'>
+      <view class='one-top'>
+        <view class='check' bindtap="bindViewTap">
+          <view class='text'>入住</view>
+          <view class='time'>{{date}}</view>
+        </view>
+        <view class='line'></view>
+        <view class='leave' bindtap="bindViewTap">
+          <view class='text'>离店</view>
+          <view class='time'>{{tomorrow}}</view>
+        </view>
+        <view class='how-long'>共2晚</view>
+      </view>
+
+      <view class='one-contain'>
+        <view class='item-list'>
+          <view class='item-picture'>
+            <image src='/images/jd01.jpg'></image>
+          </view>
+          <view class='room-type'>
+            <view class='room'>经济舒爽型</view>
+            <view class='area'>30平米</view>
+            <text class='price'>¥ 188</text>
+            <text class='text'>起</text>
+          </view>
+          <view class='reserve'>
+            <navigator url='/pages/hotel/reserve/reserve'>
+              <view class='advance'>预付</view>
+            </navigator>
+            <navigator url='/pages/hotel/room/details'>
+              <view class='details'>详情</view>
+            </navigator>
+          </view>
+        </view>
+
+        <view class='item-list'>
+          <view class='item-picture'>
+            <image src='/images/jd02.jpg'></image>
+          </view>
+          <view class='room-type'>
+            <view class='room'>时尚大床</view>
+            <view class='area'>50平米</view>
+            <text class='price'>¥ 228</text>
+            <text class='text'>起</text>
+          </view>
+          <view class='reserve'>
+            <navigator url='/pages/hotel/reserve/reserve'>
+              <view class='advance'>预付</view>
+            </navigator>
+            <navigator url='/pages/hotel/room/details'>
+              <view class='details'>详情</view>
+            </navigator>
+          </view>
+        </view>
+
+        <view class='item-list'>
+          <view class='item-picture'>
+            <image src='/images/jd01.jpg'></image>
+          </view>
+          <view class='room-type'>
+            <view class='room'>舒适两人间</view>
+            <view class='area'>38平米</view>
+            <text class='price'>¥ 168</text>
+            <text class='text'>起</text>
+          </view>
+          <view class='reserve'>
+            <navigator url='/pages/hotel/reserve/reserve'>
+              <view class='advance'>预付</view>
+            </navigator>
+            <navigator url='/pages/hotel/room/details'>
+              <view class='details'>详情</view>
+            </navigator>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+  </view> 
+
+  <view class="content-block" hidden="{{currentTab!==1}}">
+    <view class='cont-two'>
+      <view class='hotel-service'>
+        <view class='tittle'>
+          <image src='/images/star.png'></image>
+          <text>酒店服务</text>
+        </view>
+        <view class='service'>
+          <view class='item col-01 margin-r'>
+            <image src='/images/no.png'></image>
+            <text>停车</text>
+          </view>
+          <view class='item col-01 margin-r'>
+            <image src='/images/no.png'></image>
+            <text>免费WiFi</text>
+          </view>
+          <view class='item col-02'>
+            <image src='/images/yes.png'></image>
+            <text>餐厅</text>
+          </view>
+          <view class='item col-02 margin-r'>
+            <image src='/images/yes.png'></image>
+            <text>行李寄存</text>
+          </view>
+        </view>
+      </view>
+      <view class='hotel-intro'>
+        <view class='tittle'>
+          <image src='/images/star.png'></image>
+          <text>酒店介绍</text>
+        </view>
+        <view class='intro'>
+          <text>饭店位于洛阳市政治、金融、文化和商务中心的洛龙新区，环境优美，交通便利。建筑风格经典独特，极具现代化色彩，内部装饰典雅豪华并蕴含浓厚的文化氛围。2013年初，饭店又对大堂、精品购物区、二楼自助餐厅、会议室及饭店前广场等进行了升级改造，使饭店整体品质得到了进一步的提升，硬件设施和配套服务都焕然一新，将为来自世界各地的客人提供更为舒适尊贵的居停休憩环境和一流的商务环境。</text>
+        </view>
+      </view>
+    </view>
+  </view> 
+
+</view>
+
+<!--一键拨号-->
+<view class='dial' bindtap="dial" >
+  <image src='/images/phone.png'></image>
+</view>

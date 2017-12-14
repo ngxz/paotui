@@ -1,0 +1,36 @@
+<!--pages/customer/customer.wxml-->
+<view class='userIcon'>
+  <view class='imgBorder'>
+    <image src='{{userIcon}}'></image>
+  </view>
+  <view class='editUser' bindtap='editUser'>
+      <image src='../../images/edit.png'></image>
+      <span>编辑</span>
+  </view>
+</view>
+<view class='userName'>用户名字</view>
+<!--功能列表  -->
+<view class='orderList'>
+  <view class='list'>
+    <view class='tit' bindtap='listOpen'>
+      <span>下单服务</span>
+      <image src="{{row1?'../../images/row_b.png':'../../images/row_r.png'}}"></image>
+    </view>
+    <view class="subList {{open?'show':'hide'}}">
+      <image src='../../images/row_r.png'></image>
+      <span>我的订单</span>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='tit' bindtap='listOpen2'>
+      <span>跑腿</span>
+      <image src="{{row2?'../../images/row_b.png':'../../images/row_r.png'}}"></image>
+    </view>
+    <view class="subList {{open2?'show':'hide'}}" bindtap='addpingjia'>
+      <image src='../../images/row_r.png'></image>
+      <span>我要评价</span>
+    </view>
+  </view>
+</view>
+<!--技术支持  -->
+<view class='jishu'>由润企科技提供技术支持</view>

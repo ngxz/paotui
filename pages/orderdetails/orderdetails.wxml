@@ -1,0 +1,22 @@
+<!--pages/orderdetails/orderdetails.wxml-->
+<view class='abody'>
+  <view class='header'>
+    <text>第二步：填写联系人、联系电话</text>
+    <text>第三步：支付订单，等待配送员接单</text>
+    <text>第四步：交付物品，支付剩余费用。</text>
+  </view>
+  <view class='code_img'>
+    <image src='../../images/timg.gif'></image>
+  </view>
+  <view class='fooder'>
+    <text>及时雨跑腿公众号，扫描关注</text>
+  </view>
+  <view class='money'>
+    <text>￥10.00</text>
+  </view>
+  <view class='fooder_but'>
+    <text>￥10</text>
+    <button>立即下单</button>
+  </view>
+
+</view>

@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/introduce/introduce",
+    "pages/home/home",
+    "pages/customer/customer",
+    "pages/tackyou/tackyou",
+    "pages/yuyue/yuyue",
+    "pages/orderdetails/orderdetails",
+    "pages/customerdetails/customerdetails",
+    "pages/addpingjia/addpingjia",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4a91e3",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "小润跑腿"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4a91e3",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/o-01.png",
+        "selectedIconPath": "images/o-05.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/introduce/introduce",
+        "iconPath": "images/h-01.png",
+        "selectedIconPath": "images/h-05.png",
+        "text": "小润跑腿"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "iconPath": "images/zp-01.png",
+        "selectedIconPath": "images/zp-05.png",
+        "text": "客户中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

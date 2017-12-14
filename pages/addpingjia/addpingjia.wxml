@@ -1,0 +1,32 @@
+<!--pages/addpingjia/addpingjia.wxml-->
+<!--标题  -->
+<view class='titBox'>
+  <view class='tit'>店铺简介</view>
+  <view class='dianping'>
+    <image src='../../images/edit.png'></image>
+      <span>点评</span>
+  </view>
+</view>
+<!--评论列表  -->
+<view class='contentList'>
+<!--评论人及时间  -->
+  <view class='listTit'>
+  <!--左  -->
+    <view class='userIcon'>
+      <view class='icon'><image src='../../images/userIcon.jpg'></image></view>
+      <view class='userName'>我的名字</view>
+      <view class='userScore'>4.8分</view>
+    </view>
+  <!--右  -->
+    <view class='addTime'>
+      2017-12-12
+    </view>
+  </view>
+  <!--评论内容  -->
+  <view class='content'>
+    <text>target在事件流的目标阶段；currentTarget在事件流的捕获，目标及冒泡阶段。只有当事件流处在目标阶段的时候，两个的指向才是一样的， 而当处于捕获和冒泡阶段的时候，target指向被单击的对象而currentTarget指向当前事件活动的对象(注册该事件的对象)（一般为父级）。this指向永远和currentTarget指向一致（只考虑this的普通函数调用）</text>
+    <image src='../../images/userIcon.jpg'></image>
+    <image src='../../images/userIcon.jpg'></image>
+    <image src='../../images/userIcon.jpg'></image>
+  </view>
+</view>

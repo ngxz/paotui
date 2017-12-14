@@ -1,0 +1,80 @@
+<!--pages/introduce/introduce.wxml-->
+<swiper>
+ <image mode='widthFix' class="slide-image" src='/images/banner01.jpg'/>
+</swiper>
+
+<view class='ad-na'>
+  <navigator url='###'>
+    <view class='ad'>
+      <text class='address'>重庆市渝中区石油路万科中心4栋7-26</text>
+      <image src='/images/ad-na.png'></image>
+    </view>
+  </navigator>
+</view>
+
+<!--导航条-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<view class="content">
+    <view class="content-block" hidden="{{currentTab!==0}}">
+        <view class='cont-one'>
+            <view class='hotel-service'>
+                <view class='tittle'>
+                    <image src='/images/star.png'></image>
+                    <text>服务</text>
+                </view>
+                <view class='service'>
+                    <view class='item col-02 margin-r'>
+                       <image src='/images/yes.png'></image>
+                       <text>帮你买</text>
+                    </view>
+                    <view class='item col-02 margin-r'>
+                        <image src='/images/yes.png'></image>
+                        <text>帮你取</text>
+                    </view>
+                    <view class='item col-02  margin-r'>
+                        <image src='/images/yes.png'></image>
+                        <text>帮你办</text>
+                    </view>
+                    <view class='item col-02 margin-r'>
+                        <image src='/images/yes.png'></image>
+                        <text>病患陪护</text>
+                    </view>
+                    <view class='item col-02 margin-r'>
+                        <image src='/images/yes.png'></image>
+                        <text>家政服务</text>
+                    </view>
+                    <view class='item col-02 margin-r'>
+                        <image src='/images/yes.png'></image>
+                        <text>行李搬运</text>
+                    </view>
+                </view>
+            </view>
+            <view class='hotel-intro'>
+                <view class='tittle'>
+                    <image src='/images/star.png'></image>
+                    <text>介绍</text>
+                </view>
+                <view class='intro'>
+                    <view class='tit-top'>重庆小润跑腿为广大重庆居民提供本地跑腿服务！</view>
+                    <text>重庆小润跑腿为广大重庆居民提供本地跑腿服务！</text>
+                </view>
+            </view>
+        </view>
+    </view> 
+    
+    <view class="content-block" hidden="{{currentTab!==1}}">
+        <view class='cont-two'>
+        <!--总评分  -->
+          <view class='totalScore'><span>4.88</span>分</view>
+          <view class='pinglun'>全部评论：0条</view>
+        </view>
+    </view> 
+
+</view>
+
+<!--一键拨号-->
+<view class='dial' bindtap="dial" >
+  <image src='/images/phone.png'></image>
+</view>

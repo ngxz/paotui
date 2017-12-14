@@ -1,0 +1,29 @@
+<!--pages/tackyou/tackyou.wxml-->
+<view class='rel'>
+  <text class='header_text'>帮你取</text>
+  <view class="banner">
+    <image src="../../images/banner01.jpg"></image>
+  </view>
+  <view class='text_content'>
+    <text>会议马上开始了,却发现没有带资料?</text>
+    <text>人是到公司了,文件却落在了家里?</text>
+    <text>在干洗店洗了衣服,却没有时间去取?</text>
+    <text>如果你有东西需要取都能帮助你，便捷高效，24小时待命！</text>
+  </view>
+  <view class="banner">
+    <image src="../../images/banner02.jpg"></image>
+  </view>
+  <view class='text_content text_content_two'>
+    <text>第一步：填写收货地址</text>
+    <text>第二部：填写联系人、联系人电话</text>
+    <text>第三部：支付订单定金，等待配送员接单</text>
+    <text>第四部：交付物品,支付剩余费用。</text>
+  </view>
+  <view class='code_img'>
+    <image src='../../images/timg.gif'></image>
+  </view>
+  <view class='fooder'>
+    <text>￥10</text>
+    <button bindtap='openYuyue'>立即下单</button>
+  </view>
+</view>
