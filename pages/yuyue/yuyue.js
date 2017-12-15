@@ -5,11 +5,10 @@ var indexurl = app.data.indexurl;
 var inputs = {};
 Page({
     data: {
-        dates: '2017-10-01',
-        times: '12:00',
-        realname:'',
         mobile:'',
-
+        address:'',
+        destination:'',
+        list:'',
     },
     //  点击时间组件确定事件  
     bindTimeChange: function (e) {
@@ -41,6 +40,22 @@ Page({
      this.setData({
        startdate: startdate,
        enddate: enddate
+     })
+     var that = this;
+     //请求默认的地址信息
+     wx.request({
+       url: app.data.host+'getAddress',
+       data:{
+         mycomid:app.data.mycomid
+       },
+       header:{
+        'content-type':'application/json'
+       },
+       success:function(res){
+        that.setData({
+          list:res.list
+        })
+       }
      })
    },
    //提交，验证input
@@ -88,8 +103,20 @@ Page({
        })
        return;
      }
-
-
+     if (!inputs.destination) {
+       app.wxToast({
+         tapClose: true,
+         title: "请填写目的地"
+       })
+       return;
+      }
+     if (!inputs.address) {
+       app.wxToast({
+         tapClose: true,
+         title: "请填写联系人地址"
+       })
+       return;
+     }
      app.wxLoad({
        img: '/images/base/loading1.gif',
        contentClass: "loadding",
@@ -127,5 +154,12 @@ Page({
        }
      })
    },
-
+   /**
+    * 点击进入选择地址
+    */
+   choseAddress:function(){
+      wx.navigateTo({
+        url: '../choseAddress/choseAddress',
+      })
+   }
 })

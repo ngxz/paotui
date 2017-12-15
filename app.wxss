@@ -1,4 +1,24 @@
 /**app.wxss**/
+@import 'style/weui.wxss';
+@import 'style/base.wxss';
+/* @import 'style/guanwang.wxss'; */
+page{background-color: #f1f1f1}
+.pagemain{ height: auto;  overflow: hidden}
+.wxToast_mask{width:100%;height:100%;position:fixed;left:0px;top:0px;z-index:10000;background:rgba(0,0,0,0);opacity:0;display:none}.wxToast_show{display:block}.wxToast_content{max-width:80%;min-width:90px;position:absolute;left:50%;top:20%;transform:translate3d(-50%,0,0);padding:15px;color:#fff;font-size:12px;text-align:center;border-radius:5px;background:rgba(0,0,0,.6)}.wxToast_img{width:55px;height:55px;display:block;margin:0 auto 8px auto}
+
+/*行*/
+.pcol{height: 50px;  background-color: #ffffff; padding: 0 20rpx}
+.pcol .tname{ line-height: 50px}
+.pcol .tright{ float: right}
+.pcol .tright .arrow{width: 20px; height: 20px; float: right; margin-top: 15px}
+.pcol .tright .text{ float: right; line-height: 50px}
+
+/*没有数据样式*/
+.noinfomain{height: auto; margin-top:40px;  overflow: hidden}
+.noinfomain_img{width: 80px;height: 80px; margin: auto;}
+.noinfomain image{width: 80px; height: 80px}
+.noinfomain .text{ height: 50px; line-height: 50px; text-align: center; font-size: 14px; color: #666}
+
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +27,5 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+

@@ -39,49 +39,49 @@
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-02.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>帮你买</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-03.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>帮你送</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-04.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>订餐</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-05.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>买票取件</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-06.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>代购</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-07.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>送货</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-08.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>家政服务</view>
       </navigator>
     </view>
     <view class='menu-item'>
       <navigator url='../tackyou/tackyou'>
         <image class='menu-img' src='/images/icon-09.png' />
-        <view class='menu-txt'>帮你取</view>
+        <view class='menu-txt'>行李搬运</view>
       </navigator>
     </view>
 </view>

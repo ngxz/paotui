@@ -1,15 +1,17 @@
 {
   "pages": [
-    "pages/introduce/introduce",
+    "pages/yuyue/yuyue",
     "pages/home/home",
+    "pages/introduce/introduce",
     "pages/customer/customer",
     "pages/tackyou/tackyou",
-    "pages/yuyue/yuyue",
     "pages/orderdetails/orderdetails",
     "pages/customerdetails/customerdetails",
     "pages/addpingjia/addpingjia",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/choseAddress/choseAddress",
+    "pages/addAddress/addAddress"
   ],
   "window": {
     "navigationBarBackgroundColor": "#4a91e3",

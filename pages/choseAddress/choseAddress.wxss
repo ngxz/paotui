@@ -1,0 +1,10 @@
+/* pages/choseAddress/choseAddress.wxss */
+page{position: relative; display: block; padding: 0; margin: 0; background-color: #f5f5f5;font-size: 32rpx;}
+
+.item{padding: 30rpx;margin: 20rpx 0;background-color: #fff;}
+.item .name{font-size: 32rpx;}
+.address{font-size: 28rpx;color: #666;}
+/*新增按钮  */
+.add{position: relative;}
+.add image{height: 30rpx;width: 30rpx;position: absolute;left:30rpx;top: 40rpx;}
+.add .text{padding-left: 40rpx;font-size: 32rpx;}

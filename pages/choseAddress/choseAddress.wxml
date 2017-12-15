@@ -1,0 +1,12 @@
+<!--pages/choseAddress/choseAddress.wxml-->
+<view class = "item" wx:for="{{list}}" bindtap="toChose">
+  <view class = "info">
+    <view class='name'>{{item.name}}，{{item.tel}}</view>
+    <view class='address'>{{item.addre}}</view>
+  </view>
+</view>
+<!-- 新增 -->
+<view class = "item add" bindtap = "addAddre">
+  <image src='../../images/add_g.png'></image>
+  <view class = "text">新增个人地址</view>
+</view>
